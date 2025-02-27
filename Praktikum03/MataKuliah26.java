@@ -1,5 +1,7 @@
 package Praktikum03;
 
+import java.util.Scanner;
+
 public class MataKuliah26 {
     public String kode;
     public String nama;
@@ -12,5 +14,27 @@ public class MataKuliah26 {
         this.sks = sks;
         this.jumlahJam =jumlahJam;
     }
+
+    public void tambahData(Scanner sc) {
+        System.out.print("Kode       : ");
+        this.kode = sc.nextLine();
+        System.out.print("Nama       : ");
+        this.nama = sc.nextLine();
+        System.out.print("Sks        : ");
+        this.sks = sc.nextInt();
+        System.out.print("Jumlah Jam : ");
+        this.jumlahJam = sc.nextInt();
+        sc.nextLine();
+        System.out.println("--------------------------------");
+    }
+
+    public void cetakInfo() {
+        System.out.println("NIM        : " + kode);
+            System.out.println("Nama       : " + nama);
+            System.out.println("Sks        : " + sks);
+            System.out.println("Jumlah Jam : " + jumlahJam);
+            System.out.println("------------------------------");
+    }
 }
+
 
