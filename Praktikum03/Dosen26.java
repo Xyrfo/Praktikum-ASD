@@ -12,4 +12,12 @@ public class Dosen26 {
         this.jenisKelamin = jenisKelamin;
         this.usia = usia;
     }
+
+    public void cetakInfo () {
+        System.out.println("Kode          : " + kode);
+            System.out.println("Nama          : " + nama);
+            System.out.println("Jenis Kelamin : " + jenisKelamin);
+            System.out.println("Usia          : " + usia);
+            System.out.println("------------------------------");
+    }
 }
